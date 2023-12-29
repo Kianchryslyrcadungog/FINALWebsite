@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        header, section, aside, footer {
+            margin: 20px 0;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: white;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        section, aside {
+            float: left;
+            width: 100%;
+        }
+
+        aside {
+            background-color: #ddd;
+        }
+
+        footer {
+            clear: both;
+            text-align: center;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media only screen and (min-width: 600px) {
+            section {
+                width: 70%;
+                margin-right: 2%;
+            }
+
+            aside {
+                width: 28%;
+            }
+        }
+
+        @media only screen and (min-width: 900px) {
+            section {
+                width: 60%;
+                margin-right: 2%;
+            }
+
+            aside {
+                width: 38%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Your Website Header</h1>
+    </header>
+
+    <section>
+        <h2>Main Content</h2>
+        <p>This is the main content of your website.</p>
+    </section>
+
+    <aside>
+        <h2>Sidebar</h2>
+        <p>This is the sidebar content.</p>
+    </aside>
+
+    <footer>
+        <p>&copy; 2023 Your Website Footer</p>
+    </footer>
+</div>
+
+</body>

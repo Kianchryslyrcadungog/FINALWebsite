@@ -1,0 +1,32 @@
+import javax.swing.JOptionPane;
+
+public class Registration {
+        
+    
+    public static void main(String[] args) {
+  		String UserName = JOptionPane.showInputDialog(null,"Enter Username: ","USERNAME REGISTRATION", JOptionPane.PLAIN_MESSAGE);
+    	String Password = JOptionPane.showInputDialog(null,"Enter Password: ","PASSWORD REGISTRATION", JOptionPane.PLAIN_MESSAGE);
+
+    	String LoginUN = JOptionPane.showInputDialog(null,"Username: ","LOGIN", JOptionPane.PLAIN_MESSAGE);
+    	String LoginP = JOptionPane.showInputDialog(null,"Password: ","LOGIN", JOptionPane.PLAIN_MESSAGE);
+    	
+    	
+    	if (LoginUN.equals(UserName) && LoginP.equals(Password)){
+    		JOptionPane.showMessageDialog(null, "Username and Password is Correct! You are now Logged in");
+    	}else{
+    			if (!LoginUN.equals(UserName) && LoginP.equals(Password)){
+    				JOptionPane.showMessageDialog(null, "The Username you entered is incorrect! Please try again.");
+    			}
+    			if 	(LoginUN.equals(UserName) && !LoginP.equals(Password)){
+    				JOptionPane.showMessageDialog(null, "The Password you entered is incorrect! Please try again.");
+    			}
+    			if 	(!LoginUN.equals(UserName) && !LoginP.equals(Password)){
+    				JOptionPane.showMessageDialog(null, "The Password you entered is incorrect! Please try again.");
+
+    
+
+
+
+    
+    }
+}
